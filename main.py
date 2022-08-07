@@ -8,12 +8,12 @@ import pygame
 from itertools import combinations
 
 root = Tk()
-root.title("Rastgele Akor Yapıcı")
+root.title("Random Chord Generator")
 
 entryframe = ttk.Frame(root, padding="3 3 12 12")
 entryframe.grid(column=0, row=0)
 
-yönerge = ttk.Label(entryframe, text="Hangi aralıktan kaç tane olsun?")
+yönerge = ttk.Label(entryframe, text="How many of each interval?")
 yönerge.grid(column=1, columnspan=2, row=2)
 
 aralıklar_ve_no = {"sharp_diss": 0, "mild_diss": 0, "soft_cons": 0, "open_cons": 0, "T4": 0, "aug4": 0}
